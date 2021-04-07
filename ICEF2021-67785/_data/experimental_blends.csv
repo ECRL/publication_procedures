@@ -1,0 +1,10 @@
+Blend ID,Compound,SMILES,Proportion,CN,YSI,LHV,KV (cSt)
+0,Palmitic acid methyl ester,CCCCCCCCCCCCCCCC(=O)OC,0.11,52,80,33,4.054
+0,Stearic acid methyl ester,CCCCCCCCCCCCCCCCCC(=O)OC,0.04,52,80,33,4.054
+0,Oleic acid methyl ester,CCCCCCCCC=CCCCCCCCC(=O)OC,0.25,52,80,33,4.054
+0,Linoleic acid methyl ester,CCCCCC=CCC=CCCCCCCCC(=O)OC,0.52,52,80,33,4.054
+0,Linolenic acid methyl ester,CCC=CCC=CCC=CCCCCCCCC(=O)OC,0.08,52,80,33,4.054
+1,"2,4,6,8-tetraoxanonane",COCOCOCOC,0.53,73,2.1,19.3,1.19
+1,"2,4,6,8,10-pentaoxaundecane",COCOCOCOCOC,0.29,73,2.1,19.3,1.19
+1,"2,4,6,8,10,12-hexaoxatridecane",COCOCOCOCOCOC,0.14,73,2.1,19.3,1.19
+1,"2,4,6,8,10,12,14-heptaoxapentadecane",COCOCOCOCOCOCOC,0.04,73,2.1,19.3,1.19
