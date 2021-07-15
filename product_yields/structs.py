@@ -22,10 +22,11 @@ class SoftmaxMLP(nn.Module):
             dropout (float): random neuron dropout probability during training
         """
 
+        super(SoftmaxMLP, self).__init__()
         self.layers = nn.ModuleList()
         self.layers.append(nn.Linear(input_dim, hidden_dim))
         for _ in range(n_hidden):
-            self.model.append(nn.Linear(hidden_dim, hidden_dim))
+            self.layers.append(nn.Linear(hidden_dim, hidden_dim))
         self.layers.append(nn.Linear(hidden_dim, output_dim))
         self.layers.append(nn.Softmax(dim=1))
         self._dropout = dropout
@@ -59,8 +60,8 @@ class ReactorDataset(Dataset):
             y (numpy.array): target variables, shape [n_samples, n_targets]
         """
 
-        self.X = torch.as_tensor(X)
-        self.y = torch.as_tensor(y)
+        self.X = torch.as_tensor(X).type(torch.float32)
+        self.y = torch.as_tensor(y).type(torch.float32)
 
     def __len__(self) -> int:
         """
@@ -107,9 +108,10 @@ def train_model(model: 'SoftmaxMLP', dataset: 'ReactorDataset',
         Tuple[SoftmaxMLP, List[float]]: (trained model, training losses)
     """
 
-    dataloader_train = DataLoader(dataset, batch_size=batch_size, shuffle=True)
+    dataloader_train = DataLoader(dataset, batch_size=batch_size, shuffle=False)
 
     opt = torch.optim.Adam(model.layers.parameters(), **kwargs)
+    loss = nn.MSELoss()
 
     model.train()
     train_losses = []
@@ -122,15 +124,15 @@ def train_model(model: 'SoftmaxMLP', dataset: 'ReactorDataset',
             opt.zero_grad()
             pred = model(batch['X'])
             target = batch['y']
-            loss = F.mse_loss(pred, target)
-            loss.backward()
+            _loss_val = loss(pred, target)
+            _loss_val.backward()
             opt.step()
-            train_loss += loss.detach().item()
+            train_loss += _loss_val.detach().item()
 
         train_loss /= len(dataloader_train.dataset)
         train_losses.append(train_loss)
 
-        if epoch % verbose == 0:
+        if verbose > 0 and epoch % verbose == 0:
             print(f'Epoch: {epoch} | Training loss: {train_loss}')
 
     model.eval()
