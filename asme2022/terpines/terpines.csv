@@ -1,0 +1,25 @@
+﻿Name,SMILES,Exp. YSI
+R-limonene,C=C(C)[C@H]1CC=C(C)CC1,137.3
+Limonane,CC1CCC(C(C)C)CC1,92
+Sabinene,C=C1CCC2(C(C)C)CC12,203.7
+Dihydrosabinene,CC1CCC2(C(C)C)CC12,144.5
+Tetrahydrosabinene,CC1CCC(C1)(C)C(C)C,104.9
+alpha-pinene,CC1=CCC2CC1C2(C)C,207.1
+beta-pinene,CC1(C)C2CCC(C1C2)=C,136.9
+pinane,CC1CCC2CC1C2(C)C,109.7
+3-carene,CC1=CCC2C(C1)C2(C)C,248.5
+dihydrocarene,CC1CCC2C(C1)C2(C)C,144.1
+tetrahydrocarene,CC1CCCC(C)(C)CC1,99.1
+"1,4-dimenthylcyclooctane",CC1CCCCC(C)CC1,84.7
+"1,8-cineole",CC1(C2CCC(O1)(CC2)C)C,111
+"1,4-cineole",CC(C)C12CCC(O1)(CC2)C,104.6
+S-carvone,CC1=CC[C@@H](CC1=O)C(=C)C,126.4
+R-carvone,CC1=CC[C@H](CC1=O)C(=C)C,127.7
+myrcene,CC(=CCCC(=C)C=C)C,103.6
+beta-ocimene,CC(=CCC=C(C)C=C)C,213.6
+dihydromyrcene,CC(C=C)CC/C=C(C)\C,110.9
+geranial,CC(=CCCC(=CC=O)C)C,91.8
+geraniol,CC(=CCCC(=CCO)C)C,103.7
+citronellal,CC(CCC=C(C)C)CC=O,85.6
+carvacrol,CC1=C(C=C(C=C1)C(C)C)O,193.1
+linalool,CC(=CCCC(C)(C=C)O)C,98
