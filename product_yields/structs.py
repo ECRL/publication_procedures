@@ -108,7 +108,7 @@ def train_model(model: 'SoftmaxMLP', dataset: 'ReactorDataset',
         Tuple[SoftmaxMLP, List[float]]: (trained model, training losses)
     """
 
-    dataloader_train = DataLoader(dataset, batch_size=batch_size, shuffle=False)
+    dataloader_train = DataLoader(dataset, batch_size=batch_size, shuffle=True)
 
     opt = torch.optim.Adam(model.layers.parameters(), **kwargs)
     loss = nn.MSELoss()
