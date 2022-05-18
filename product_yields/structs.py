@@ -5,6 +5,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import DataLoader, Dataset
+from sklearn.model_selection import train_test_split
 
 
 class SoftmaxMLP(nn.Module):
@@ -89,6 +90,7 @@ class ReactorDataset(Dataset):
 
 def train_model(model: 'SoftmaxMLP', dataset: 'ReactorDataset',
                 epochs: int = 100, batch_size: int = 1, verbose: int = 0,
+                valid_size: float = 0.33, patience: int = 32,
                 **kwargs) -> Tuple['SoftmaxMLP', List[float]]:
     """
     Trains a model using supplied data
@@ -101,6 +103,13 @@ def train_model(model: 'SoftmaxMLP', dataset: 'ReactorDataset',
         batch_size (int, optional): size of each training batch (default: 1)
         verbose (int, optional): if >0, prints loss every `this` epochs
             (default: 0, no printing)
+        valid_size (float, default 0.2): proportion of the training data to be
+            used as each epoch's validation subset; validation subsets used to
+            terminate training (valid loss no longer decreasing); validation
+            subset chosen at random each epoch
+        patience (int, default 16): how many epochs to wait for a lower
+            validation loss; if not found, terminates training, restores best
+            (lowest valid loss) model paramters
         **kwargs (optional): additional arguments to be passed to
             torch.optim.Adam()
 
@@ -108,14 +117,29 @@ def train_model(model: 'SoftmaxMLP', dataset: 'ReactorDataset',
         Tuple[SoftmaxMLP, List[float]]: (trained model, training losses)
     """
 
-    dataloader_train = DataLoader(dataset, batch_size=batch_size, shuffle=True)
+    ds_train, ds_valid = train_test_split(
+        dataset, test_size=valid_size, random_state=None
+    )
+    dataloader_train = DataLoader(ds_train, batch_size=batch_size, shuffle=True)
+    dataloader_valid = DataLoader(ds_valid, batch_size=batch_size, shuffle=True)
 
     opt = torch.optim.Adam(model.layers.parameters(), **kwargs)
     loss = nn.MSELoss()
 
     model.train()
     train_losses = []
+    valid_losses = []
+    _best_params = model.state_dict()
+    _best_v_loss = 1e10
+    _n_since_best = 0
+
     for epoch in range(epochs):
+
+        ds_train, ds_valid = train_test_split(
+            dataset, test_size=valid_size, random_state=None
+        )
+        dataloader_train = DataLoader(ds_train, batch_size=batch_size, shuffle=True)
+        dataloader_valid = DataLoader(ds_valid, batch_size=batch_size, shuffle=True)
 
         train_loss = 0.0
 
@@ -132,8 +156,30 @@ def train_model(model: 'SoftmaxMLP', dataset: 'ReactorDataset',
         train_loss /= len(dataloader_train.dataset)
         train_losses.append(train_loss)
 
+        valid_loss = 0.0
+
+        for batch in dataloader_valid:
+
+            pred = model(batch['X'])
+            target = batch['y']
+            valid_loss += loss(pred, target).detach().item()
+
+        valid_loss /= len(dataloader_valid.dataset)
+        valid_losses.append(valid_loss)
+
+        if valid_loss < _best_v_loss:
+            _best_v_loss = valid_loss
+            _best_params = model.state_dict()
+            _n_since_best = 0
+        elif _n_since_best > patience:
+            model.load_state_dict(_best_params)
+            break
+        else:
+            _n_since_best += 1
+
         if verbose > 0 and epoch % verbose == 0:
-            print(f'Epoch: {epoch} | Training loss: {train_loss}')
+            print(f'Epoch: {epoch} | Training loss: {train_loss} ' +
+                  '| Validation loss: {valid_loss}')
 
     model.eval()
     return (model, train_losses)
