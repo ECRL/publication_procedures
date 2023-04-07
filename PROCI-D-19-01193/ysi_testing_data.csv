@@ -1,0 +1,57 @@
+Compound Name,SMILES,Experimental YSI
+Morpholine,C1COCCN1,8.768395092
+n-butyl nitrite,CCCCON=O,11.20918343
+"1,2-propanediol",CC(O)CO,13.7
+diethyl carbonate,CCOC(=O)OCC,15.3
+2-butanone,CCC(C)=O,17.2
+"1,2-dimethoxypropane",COCC(C)OC,18.6
+isopropyl formate,CC(C)OC=O,20.3
+cyclopentanone,O=C1CCCC1,22.0
+Pyrrole,c1cc[nH]c1,22.91453586
+2-methyl-3-buten-2-ol,C=CC(C)(C)O,25.0
+ethyl butyrate,CCCC(=O)OCC,25.5
+tetrahydropyran,C1CCOCC1,26.5
+2-methylpentanal,CCCC(C)C=O,27.6
+methyl-2-methyl-2-propenoate,C=C(C)C(=O)OC,29.0
+ethyl-2-butenoate,C/C=C/C(=O)OCC,30.3
+butyl formate,CCCCOC=O,31.0
+4-methyl-2-pentanone,CC(=O)CC(C)C,32.8
+ethyl-2-methyl-2-butenoate,C/C=C(\C)C(=O)OCC,34.0
+pentyl formate,CCCCCOC=O,35.7
+2-methyl-2-pentanol,CCCC(C)(C)O,36.4
+2-octanone,CCCCCCC(C)=O,37.9
+dibutyl ether,CCCCOCCCC,38.7
+"3,3-dimethyl-2-butanol",CC(O)C(C)(C)C,40.4
+ethyl-4-pentenoate,C=CCCC(=O)OCC,41.2
+1-hexene,C=CCCCC,42.4
+"2,2-dimethylbutane",CCC(C)(C)C,43.4
+5-methylfuran-2-carbaldehyde,Cc1ccc(C=O)o1,44.11601392
+"2,2-dimethyl-3-pentanol",CCC(O)C(C)(C)C,46.0
+2-butylhexanal,CCCCC(C=O)CCCC,48.2
+n-nonane,CCCCCCCCC,50.1
+"2,2-dimethylhexane",CCCCC(C)(C)C,52.8
+cis 4-methyl-2-pentene,C/C=C\C(C)C,54.1
+"2,4-dimethylhexane",CCC(C)CC(C)C,56.1
+"2,4,4-trimethyl-1-pentanol",CC(CO)CC(C)(C)C,59.0
+"2,2,4-trimethylpentane",CC(C)CC(C)(C)C,61.7
+n-undecane,CCCCCCCCCCC,64.7
+"2-methyl-1,5-hexadiene",C=CCCC(=C)C,67.7
+1-octyne,C#CCCCCCC,74.1
+3-methyl-1-cyclohexene,CC1C=CCCC1,85.0
+"1,4-cyclohexadiene",C1=CCC=CC1,101.4
+o-toluidine,Cc1ccccc1N,114.4255294
+1-phenylethanone,CC(=O)c1ccccc1,130.8
+styrene,C=Cc1ccccc1,174.0
+2-xylene,Cc1ccccc1C,200.0
+"1,3-dimethylbenzene",Cc1cccc(C)c1,221.6
+(2-methylpropyl)-benzene,CC(C)Cc1ccccc1,257.6
+"(1,1-dimethylethyl)-benzene",CC(C)(C)c1ccccc1,291.1
+n-tridecylbenzene,CCCCCCCCCCCCCc1ccccc1,319.8
+1-ethynyl-4-methylbenzene,C#Cc1ccc(C)cc1,374.7
+(1-propynyl)-benzene,CC#Cc1ccccc1,427.5
+"1-ethenyl-2,5-dimethylbenzene",C=Cc1cc(C)ccc1C,469.3
+"trans 1,2-diphenylethylene",C(=C/c1ccccc1)\c1ccccc1,602.0
+"2,2-diphenylpropane",CC(C)(c1ccccc1)c1ccccc1,727.5
+"1,5-dimethylnaphthalene",Cc1cccc2c(C)cccc12,779.7
+2-phenylindene,C1=C(c2ccccc2)Cc2ccccc21,931.3
+1-phenylnaphthalene,c1ccc(-c2cccc3ccccc23)cc1,1103.7

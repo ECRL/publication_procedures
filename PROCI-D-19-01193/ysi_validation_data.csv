@@ -1,0 +1,114 @@
+Compound Name,SMILES,Experimental YSI
+Isopropyl nitrate ,CC(C)O[N+](=O)[O-],1.053112827
+N-methylpropionamide,CCC(=O)NC,7.022612207
+"N,N-dimethylacetamide",CC(=O)N(C)C,9.688635793
+"2-methyl-1,3-dioxolane",CC1OCCO1,11.1
+"1,2-dimethoxyethane",COCCOC,11.8
+diethylamine,CCNCC,13.2
+"1,1-dimethoxyethane",COC(C)OC,14.2
+n-butylamine,CCCCN,15.04215796
+2-ethoxyethanol,CCOCCO,15.7
+1-methoxy-2-propanol,COCC(C)O,16.4
+3-methoxy-1-propanol,COCCCO,17.9
+sec-butylamine,CCC(C)N,18.55823394
+"1,2-epoxybutane",CCC1CO1,18.8
+oxolane,C1CCOC1,20.1
+tert-butylamine,CC(C)(C)N,21.09697983
+isobutanal,CC(C)C=O,21.2
+N-ethylbutylamine,CCCCNCC,22.1
+Dipropylamine,CCCNCCC,22.45477328
+isobutylamine,CC(C)CN,23.36464274
+methyl 2-methylbutyrate,CCC(C)C(=O)OC,24.9
+N-methylallylamine,C=CCNC,25.3
+1-pentanol,CCCCCO,25.4
+2-hexanone,CCCCC(C)=O,25.6
+ethyl isobutyrate,CCOC(=O)C(C)C,26.1
+Hexylamine,CCCCCCN,26.63057754
+2-methylpiperidine,CC1CCCCN1,27.31104739
+3-methylbutanal,CC(C)CC=O,27.9
+4-heptanone,CCCC(=O)CCC,28.5
+3-pentanol,CCC(O)CC,29.1
+1-hexanol,CCCCCCO,30.0
+2-heptanone,CCCCCC(C)=O,30.4
+allylamine,C=CCN,30.79115174
+1-butoxy-2-propanol,CCCCOCC(C)O,31.7
+methyl heptanoate,CCCCCCC(=O)OC,32.5
+3-methoxy-3-methyl-1-butanol,COC(C)(C)CCO,33.2
+heptanal,CCCCCCC=O,33.8
+dipropyl carbonate,CCCOC(=O)OCCC,34.5
+sec-butyl acetate,CCC(C)OC(C)=O,34.9
+2-methyl-3-hexanone,CCCC(=O)C(C)C,35.9
+3-methyl-1-pentanol,CCC(C)CCO,36.3
+2-ethylhexanal,CCCCC(C=O)CC,36.6
+3-methyl-2-pentanol,CCC(C)C(C)O,37.7
+methyl tert-amyl ether,CCC(C)(C)OC,38.1
+3-heptanol,CCCCC(O)CC,38.5
+2-ethyl hexyl nitrate,CCCCC(CC)CO[N+](=O)[O-],39.15580129
+cis 2-pentene,C/C=C\CC,39.8
+"3,3-dimethyl-2-butanone",CC(=O)C(C)(C)C,40.6
+isobutyl propionate,CCC(=O)OCC(C)C,41.1
+5-nonanone,CCCCC(=O)CCCC,41.8
+cyclohexanol,OC1CCCCC1,42.3
+cyclohexane,C1CCCCC1,42.7
+3-methylhexane,CCCC(C)CC,43.0
+2-methyl-2-butene,CC=C(C)C,43.5
+"2,3-dimethylbutane",CC(C)C(C)C,44.0
+3-methyl-1-pentene,C=CC(C)CC,45.1
+trans 2-hexene,C/C=C/CCC,45.8
+trans 3-hexene,CC/C=C/CC,47.2
+dibutoxymethane,CCCCOCOCCCC,47.7
+"4,5-dimethyl-2-pentyl-1,3-dioxolane",CCCCCC1OC(C)C(C)O1,48.7
+1-pentoxypentane,CCCCCOCCCCC,49.8
+methylcyclopentane,CC1CCCC1,50.3
+2-decanone,CCCCCCCCC(C)=O,51.9
+"2,3-dimethyl-1-butene",C=C(C)C(C)C,53.4
+2-propylfuran,CCCc1ccco1,53.8
+"2,5-dimethylfuran",Cc1ccc(C)o1,55.1
+1-octene,C=CCCCCCC,56.0
+n-decane,CCCCCCCCCC,57.2
+2-butylfuran,CCCCc1ccco1,58.6
+3-ethyl-2-pentene,CC=C(CC)CC,59.8
+4-methyl-1-cyclohexene,CC1CC=CCC1,61.0
+methyl cyclopentyl ether,COC1CCCC1,62.3
+1-nonene,C=CCCCCCCC,64.4
+4-methylpyridine,Cc1ccncc1,65.65246501
+"1,4-dimethylcyclohexane",CC1CCC(C)CC1,67.6
+"2-(heptan-3-yl)-4,5-dimethyl-1,3-dioxolane",CCCCC(CC)C1OC(C)C(C)O1,68.5
+"2,3,3-trimethyl-1-butene",C=C(C)C(C)(C)C,72.8
+hept-2-yne,CC#CCCCC,75.2
+"1,2,4-trimethylcyclohexane",CC1CCC(C)C(C)C1,82.8
+1-dodecene,C=CCCCCCCCCCC,90.3
+bicyclohexyl,C1CCC(C2CCCCC2)CC1,100.3
+cis + trans decahydronaphthalene,C1CCC2CCCCC2C1,105.5
+anisole,COc1ccccc1,111.0
+m-toluidine,Cc1cccc(N)c1,119.647186
+3-methylanisole,COc1cccc(C)c1,126.0
+1-phenylethanol,CC(O)c1ccccc1,142.0
+1-tert-butyl-1-cyclohexene,CC(C)(C)C1=CCCCC1,161.0
+1-acetyl indole,CC(=O)n1ccc2ccccc21,187.0776255
+benzylamine,NCc1ccccc1,196.8211718
+2-phenylethanol,OCCc1ccccc1,207.0
+2-phenylacetaldehyde,O=CCc1ccccc1,217.6
+3-methyl benzyl alcohol,Cc1cccc(CO)c1,243.0
+n-heptylbenzene,CCCCCCCc1ccccc1,257.1
+"1,4-diethylbenzene",CCc1ccc(CC)cc1,270.7
+n-decylbenzene,CCCCCCCCCCc1ccccc1,283.2
+n-dodecylbenzene,CCCCCCCCCCCCc1ccccc1,304.1
+"1,2,3-trimethylbenzene",Cc1cccc(C)c1C,315.1
+1-ethenyl-3-methylbenzene,C=Cc1cccc(C)c1,322.4
+(1-propenyl)-benzene,C/C=C/c1ccccc1,352.2
+1-ethynyl-3-methylbenzene,C#Cc1cccc(C)c1,384.6
+4-tert-butyltoluene,Cc1ccc(C(C)(C)C)cc1,410.8
+1-ethynyl-4-ethylbenzene,C#Cc1ccc(CC)cc1,442.6
+indene,C1=Cc2ccccc2C1,467.7
+pentamethylbenzene,Cc1cc(C)c(C)c(C)c1C,481.8
+"4,4-dimethylbibenzyl",Cc1ccc(CCc2ccc(C)cc2)cc1,549.8
+diphenylmethane,c1ccc(Cc2ccccc2)cc1,612.5
+2-ethylnaphthalene,CCc1ccc2ccccc2c1,701.3
+"1,2-dimethylnaphthalene",Cc1ccc2ccccc2c1C,743.1
+"2,6-dimethylnaphthalene",Cc1ccc2cc(C)ccc2c1,774.5
+4-ethylbiphenyl,CCc1ccc(-c2ccccc2)cc1,811.1
+"4,4-dimethylbiphenyl",Cc1ccc(-c2ccc(C)cc2)cc1,899.9
+anthracene,c1ccc2cc3ccccc3cc2c1,962.6
+dibenzosuberane,c1ccc2c(c1)CCc1ccccc1C2,1067.2
+pyrene,c1cc2ccc3cccc4ccc(c1)c2c34,1250.1
